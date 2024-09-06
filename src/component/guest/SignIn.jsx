@@ -10,6 +10,8 @@ export default function SignIn() {
   const buttonDivRef = useRef(null);
   const { setIsAuthenticated, setUserInfor } = useContext(AuthContext);
   const googleClientID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+  console.log(googleClientID);
+  
 
   const handleInput = (e) => {
     const value = e.target;
